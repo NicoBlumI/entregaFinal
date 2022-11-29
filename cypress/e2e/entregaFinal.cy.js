@@ -76,6 +76,7 @@ before('Loging y cargar datos',()=>{
     checkOut.escribirNumero(infoTarjeta.cardNumber);
     checkOut.clickPurchase();
     recipt.espera(infoTarjeta.nombre,infoTarjeta.apellido);
+    recipt.verificarNombre(infoTarjeta.nombre,infoTarjeta.apellido);
     recipt.verificarProducto(producto.producto1.producto);
     recipt.verificarProducto(producto.producto2.producto);
     recipt.verificarTarjeta(infoTarjeta.cardNumber);
