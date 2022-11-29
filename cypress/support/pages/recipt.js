@@ -1,8 +1,8 @@
 export class Recipt{
 
-espera(nombre,apellido){
+espera(){
     
-    cy.get('#name',{timeout:30000}).should('have.text',`${nombre} ${apellido} has succesfully purchased the following items`);
+    cy.get('#name',{timeout:30000})
 
 }
 
